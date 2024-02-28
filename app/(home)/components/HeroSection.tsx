@@ -2,10 +2,11 @@ import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Link from "next/link";
 import React from "react";
 import Title from "./Title";
+import DownloadBtn from "@/components/DownloadBtn";
 
 const HeroSection = () => {
   return (
-    <div className="flex items-center justify-between min-h-[60vh] flex-col-reverse lg:gap-0 gap-14 lg:flex-row">
+    <div className="flex items-center justify-between min-h-[60vh] flex-col-reverse lg:gap-0 gap-14 lg:flex-row animate-move-up">
       <div className=" space-y-10 lg:text-left text-center">
         <h1 className=" text-4xl lg:text-7xl font-bold">
           Nice to meet you! 👋 <br />
@@ -41,9 +42,7 @@ const HeroSection = () => {
         </div>
         
         <div className=" absolute bottom-5 sm:bottom-14 left-0 sm:-left-10">
-        <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold" >
-            <p>📢 Available for Work</p>
-        </MovingBorderBtn>
+        <DownloadBtn />
         </div>
       </div>
     </div>
